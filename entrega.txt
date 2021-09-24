@@ -1,0 +1,11 @@
+IMPRESION INICIAL DEL PROBLEMA
+La primera vez que vi el enunciado, inmediatamente pense en buscar a mano las combinaciones posibles de las prendas (no habia entendido de todo el problema).
+Despues de eso, me di cuenta que tenia que tener una solucion mas practica y menos trabajosa
+
+IDEAS PARA RESOLVERLO
+Luego de esa primer impresion, relei el trabajo y me encontre con la palabra "edges", lo cual me llamo la atencion y me llevo a pensar en un problema de 
+caminos minimos. Para resolverlo, intentare implementar un algoritmo de Dijkstra para que me encuentre las mejores combinaciones posibles, tratando a cada
+prenda como un nodo, las incompatibilidades como "falta de camino" y el tiempo de lavado como el peso de los caminos.
+
+COMENTARIOS DE CODIGO
+Implementacion rudimentaria de algoritmo de Dijkstra
