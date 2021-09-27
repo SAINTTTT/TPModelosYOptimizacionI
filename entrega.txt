@@ -7,6 +7,10 @@ Luego de esa primer impresion, relei el trabajo y me encontre con la palabra "ed
 caminos minimos. Para resolverlo, intentare implementar un algoritmo de Dijkstra para que me encuentre las mejores combinaciones posibles, tratando a cada
 prenda como un nodo, las incompatibilidades como "falta de camino" y el tiempo de lavado como el peso de los caminos.
 
+Dada la falta de tiempo, decidi utilizar el algoritmo para descubrir que compatibilidades poseia y cuanto tiempo me llevaba lavar las diferentes combinaciones.
+Luego, utilizare la salida de mi algoritmo para escoger los resultados mas convenientes para mezclar las diferentes prendas a lavar.
+
+
 COMENTARIOS DE CODIGO
 Implementacion de algoritmo de Dijkstra
 
@@ -21,5 +25,4 @@ Decidi acortar el camino a mostrar (len(path) < 3) para poder ver mas facilmente
 COMENTARIOS FINALES
 A medida que avance con el problema, me di cuenta que no tuve en consideracion un punto muy importante: dado el camino A -> B -> C, el algoritmo de caminos minimos me asegura que no va a haber camino de A -> C directamente, lo que en nuestro modelos significaba que no se iban a poder lavar juntas. Pero al haber un nodo B intermedio, el algoritmos me juntaba 2 prendas incompatibles si habia una que las "unia" o que tenian compatibles en comun
 
-Dada la falta de tiempo, decidi utilizar el algoritmo para descubrir que compatibilidades poseia y cuanto tiempo me llevaba lavar las diferentes combinaciones.
-Luego, utilizare la salida de mi algoritmo para escoger los resultados mas convenientes para mezclar las diferentes prendas a lavar.
+A simple vista, parecia un problema con un modelado sencillo. Pero a medida que pasaba el tiempo y se interiorizaba mas en el asunto, salian a la luz nuevas problematicas que habia que tener en cuenta a la hora de modelar
