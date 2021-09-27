@@ -8,9 +8,17 @@ caminos minimos. Para resolverlo, intentare implementar un algoritmo de Dijkstra
 prenda como un nodo, las incompatibilidades como "falta de camino" y el tiempo de lavado como el peso de los caminos.
 
 COMENTARIOS DE CODIGO
-Implementacion rudimentaria de algoritmo de Dijkstra
+Implementacion de algoritmo de Dijkstra
+
+El codigo fue una ayuda para poder armar las combinaciones de las prendas. Quizas en una futura mejora, se podria agregar:
+  - Seleccion de la prenda segun incompatibilidades a pesar de tener una prenda en comun.
+  - Poder elegir el menor de los caminos para poder tener una buena base optimizada.
 
 MEJORAS
+Decidi acortar el camino a mostrar (len(path) < 3) para poder ver mas facilmente las posibles combinaciones de las prendas
+
+
+COMENTARIOS FINALES
 A medida que avance con el problema, me di cuenta que no tuve en consideracion un punto muy importante: dado el camino A -> B -> C, el algoritmo de caminos minimos me asegura que no va a haber camino de A -> C directamente, lo que en nuestro modelos significaba que no se iban a poder lavar juntas. Pero al haber un nodo B intermedio, el algoritmos me juntaba 2 prendas incompatibles si habia una que las "unia" o que tenian compatibles en comun
 
 Dada la falta de tiempo, decidi utilizar el algoritmo para descubrir que compatibilidades poseia y cuanto tiempo me llevaba lavar las diferentes combinaciones.
